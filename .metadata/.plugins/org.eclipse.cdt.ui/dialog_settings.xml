@@ -8,4 +8,11 @@
 	<section name="OptionalMessageDialog.hide.">
 		<item key="askReindex.detail" value="0"/>
 	</section>
+	<section name="org.eclipse.cdt.ui.STRING_VARIABLE_SELECTION_DIALOG_SECTION">
+		<item key="DIALOG_X_ORIGIN" value="218"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="444"/>
+		<item key="DIALOG_HEIGHT" value="899"/>
+		<item key="DIALOG_FONT_NAME" value="1|Umpush|11.0|0|GTK|1|"/>
+	</section>
 </section>

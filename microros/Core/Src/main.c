@@ -13,6 +13,8 @@
   * in the root directory of this software component.
   * If no LICENSE file comes with this software, it is provided AS-IS.
   *
+  * Code written by Kamath Abhay Sunil for the ASTRA rover (USN: 1RV22EE021)
+  * R.V. College of Engineering Banglore India
   ******************************************************************************
   */
 /* USER CODE END Header */
@@ -34,25 +36,19 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <geometry_msgs/msg/twist.h>
+#include <geometry_msgs/msg/twist.h> //MAKE SURE TO INCLUDE THE MESSAGE TYPE WE WISH TO USE
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define ARRAY_LEN 200
-
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-rcl_publisher_t publisher_string;
-//geometry_msgs__msg__Twist cmd_vel_msg;
-std_msgs__msg__String pub_str_msg;
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -63,7 +59,8 @@ DMA_HandleTypeDef hdma_usart2_rx;
 DMA_HandleTypeDef hdma_usart2_tx;
 
 /* Definitions for defaultTask */
-osThreadId_t defaultTaskHandle;
+osThreadId_t defaultTaskHandle; 								/*the default task is initialized here by the ide itself,
+																	essentially this set of code is executed once*/
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
   .stack_size = 3000 * 4,
@@ -71,6 +68,22 @@ const osThreadAttr_t defaultTask_attributes = {
 };
 /* USER CODE BEGIN PV */
 
+//Initialize private variables in this block
+
+
+static int32_t leftWheelEncoder = 0;
+static int32_t rightWheelEncoder = 0;
+
+//declare the variables for wheel velocity as well as declare certain constants in this code block
+
+double leftWheelVelocity;											//initialize the left wheel velocity variable this is in m/s
+double rightWheelVelocity;											//initialize right wheel velocity variable in m/s
+
+double leftWheelRPM;												//initializing the left wheel RPM
+double rightWheelRPM;												//initializing the right wheel RPM
+
+const double length = 0.225;					   					//this is the distance between the left and right wheels divided by two in meters
+const double wheelRadius = 0.07;									//radius of the wheel
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -87,43 +100,75 @@ void StartDefaultTask(void *argument);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-/*void subscription_str_callback(const void*msgin)
+
+//IN THIS BLOCK WE WRITE CALLBACKS FOR MICROROS
+
+void cmd_vel_callback(const void*msgin)											//defining the cmd_vel callback
 {
-std_msgs__msg__String * msg = (std_msgs__msg__String *)msgin;
-pub_str_msg = *msg;
-char str[100];
-strcpy(str, msg->data.data);
-  sprintf(pub_str_msg.data.data, "DABOSS heard: %s", str);
-  pub_str_msg.data.size = strlen(pub_str_msg.data.data);
-  rcl_publish(&publisher_string, &pub_str_msg, NULL);
-}
+	geometry_msgs__msg__Twist * msg = (geometry_msgs__msg__Twist*)msgin;		//pointing the message type of /cmd_vel to msg
+
+	leftWheelVelocity = msg->linear.x - msg->angular.z*length;					//defining the left wheel velocity using differential drive kinematics
+	rightWheelVelocity = msg->linear.x + msg->angular.z*length;					//defining the right wheel velocity using differential drive kinematics
+
+	leftWheelRPM = leftWheelVelocity*60/6.2831;                                /*left wheel velocity the unit is m/s so we multiply it by 60
+																					and divide by 2pi to get rpm*/
+	rightWheelRPM = rightWheelVelocity*60/6.2831;								//same as what we did for the left wheel
+
+	if (leftWheelRPM >= 0 && leftWheelRPM <= 1000 && rightWheelRPM >= 0 && rightWheelRPM <= 1000){ //To move the bot front
+		TIM3->CCR1 = leftWheelRPM;
+		TIM3->CCR2 = 0;
+		TIM3->CCR3 = rightWheelRPM;
+		TIM3->CCR4 = 0;
+	}
+	else if (leftWheelRPM <= 0 && leftWheelRPM >= -1000 && rightWheelRPM <= 0 && rightWheelRPM >= -1000){ //To move the bot back
+		TIM3->CCR1 = 0;
+		TIM3->CCR2 = -leftWheelRPM;
+		TIM3->CCR3 = 0;
+		TIM3->CCR4 = -rightWheelRPM;
+	}
+	else if (leftWheelRPM >= 0 && leftWheelRPM <= 1000 && rightWheelRPM <= 0 && rightWheelRPM >= -1000){ //To move the bot left
+		TIM3->CCR1 = 0;
+		TIM3->CCR2 = -leftWheelRPM;
+		TIM3->CCR3 = rightWheelRPM;
+		TIM3->CCR4 = 0;
+	}
+	else if (leftWheelRPM <= 0 && leftWheelRPM >= -1000 && rightWheelRPM >= 0 && rightWheelRPM <= 1000){ //To move the bot right
+		TIM3->CCR1 = leftWheelRPM;
+		TIM3->CCR2 = 0;
+		TIM3->CCR3 = 0;
+		TIM3->CCR4 = -rightWheelRPM;
+	}
+	else{
+		TIM3->CCR1 = 0;
+		TIM3->CCR2 = 0;
+		TIM3->CCR3 = 0;
+		TIM3->CCR4 = 0;
+	}
+
+
+	//THE BELOW CODE IS TO MOVE THE BOT FRONT AND BACK
+
+
+/*	if (msg->linear.x >= 0){
+		HAL_GPIO_WritePin(green_GPIO_Port, green_Pin, 1); 						//while moving forward we want green light to turn on
+		HAL_GPIO_WritePin(red_GPIO_Port, red_Pin, 0); 							//and hence red light is turned off
+		TIM3->CCR1 = 200*msg->linear.x;   										//RPWM1 set to high (PA6)
+		TIM3->CCR2 = 0; 														//RPWM2 set to low  (PA7)
+		TIM3->CCR3 = 200*msg->linear.x;  										//LPWM1 set to high (PB0)
+		TIM3->CCR4 = 0; 														//LPWM2 set to low  (PB1)
+
+	}else{
+		HAL_GPIO_WritePin(green_GPIO_Port, green_Pin, 0);						//now we are moving backwards so green is turned off
+		HAL_GPIO_WritePin(red_GPIO_Port, red_Pin, 1);							//and red is turned on
+		TIM3->CCR1 = 0; 														//RPWM1 set to low
+		TIM3->CCR2 = -200*msg->linear.x;										//RPWM2 set to high
+		TIM3->CCR3 = 0; 														//LPWM1 set to low
+		TIM3->CCR4 = -200*msg->linear.x;										//LPWM2 set to high
+	}
 */
-geometry_msgs__msg__Twist * msg;
-
-void cmd_vel_callback(const*msgin)
-{
-	geometry_msgs__msg__Twist * msg = (geometry_msgs__msg__Twist*)msgin;
-	if (msg->linear.x >= 0){
-		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, 1);
-		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, 0);
-		printf("forward");
-	}else{
-		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, 0);
-		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, 1);
-		printf("backwards");
-
-	}
 }
-void cmd_vel_status_callback(const*msgin)
-{
-	geometry_msgs__msg__Twist * msg = (geometry_msgs__msg__Twist*)msgin;
 
-	if (msg->linear.x >= 0){
-		rclc_
-	}else{
-		printf(msg);
-	}
-}
+
 /* USER CODE END 0 */
 
 /**
@@ -158,7 +203,10 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -200,6 +248,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -275,9 +324,9 @@ static void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 1 */
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 99;
+  htim3.Init.Prescaler = 9;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 499;
+  htim3.Init.Period = 999;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -303,6 +352,18 @@ static void MX_TIM3_Init(void)
   sConfigOC.Pulse = 0;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_3) != HAL_OK)
+  {
+    Error_Handler();
+  }
   if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_4) != HAL_OK)
   {
     Error_Handler();
@@ -381,28 +442,18 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+  __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOD, green_Pin|orange_Pin|red_Pin|blue_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4|GPIO_PIN_5, GPIO_PIN_RESET);
-
-  /*Configure GPIO pins : PD12 PD13 PD14 PD15 */
-  GPIO_InitStruct.Pin = GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15;
+  /*Configure GPIO pins : green_Pin orange_Pin red_Pin blue_Pin */
+  GPIO_InitStruct.Pin = green_Pin|orange_Pin|red_Pin|blue_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : PB4 PB5 */
-  GPIO_InitStruct.Pin = GPIO_PIN_4|GPIO_PIN_5;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
@@ -455,13 +506,17 @@ void StartDefaultTask(void *argument)
 	  }
 
 	  // micro-ROS application
+
 	  rcl_subscription_t subscriber_cmd_vel;
-	  rcl_subscription_t subscriber_cmd_vel_status;
-	  std_msgs__msg__String sub_str_msg;
 	  geometry_msgs__msg__Twist cmd_vel_msg;
-	  geometry_msgs__msg__Twist cmd_vel_status_msg;
+
+
+	  //std_msgs__msg__String sub_str_msg;
+	  //rcl_subscription_t subscriber_cmd_vel_status;
+	  //geometry_msgs__msg__Twist cmd_vel_status_msg;
 	  /*rcl_publisher_t publisher, publisher_string;
 	  std_msgs__msg__Int32 msg;*/
+
 	  rclc_support_t support;
 	  rcl_allocator_t allocator;
 	  rcl_node_t node;
@@ -472,20 +527,23 @@ void StartDefaultTask(void *argument)
 	  rclc_support_init(&support, 0, NULL, &allocator);
 
 	  // create node
-	  rclc_node_init_default(&node, "cubemx_node", "", &support);
+	  rclc_node_init_default(&node, "microROS", "", &support);
 
 	  // create publisher
-	  rclc_publisher_init_best_effort(
+
+	  /*rclc_publisher_init_best_effort(
 			  &publisher_string,
 			  &node,
 			  ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, String),
 			  "Brother");
+	  */
 	  
-	  rclc_publisher_init_default(
+	  /*rclc_publisher_init_default(
 			  &subscriber_cmd_vel_status,
 			  &node,
 			  ROSIDL_GET_MSG_TYPE_SUPPORT(geometry_msgs, msg, Twist),
 	    "status_cmd_vel");
+	    */
 	  /*rclc_publisher_init_best_effort(&cmd_vel_msg, &node, Twist, "velocity");*/
 	  /*rclc_publisher_init_default(
 	    &publisher,
@@ -493,6 +551,9 @@ void StartDefaultTask(void *argument)
 	    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
 	    "cubemx_publisher");
 	    */
+
+
+
 	  //create subscriber
 	  rclc_subscription_init_default(
 	    &subscriber_cmd_vel,
@@ -504,24 +565,14 @@ void StartDefaultTask(void *argument)
 	  rclc_executor_t executor = rclc_executor_get_zero_initialized_executor();
 	  rclc_executor_init(&executor, &support.context, 2, &allocator);
 	  rclc_executor_add_subscription(&executor, &subscriber_cmd_vel, &cmd_vel_msg, &cmd_vel_callback, ON_NEW_DATA);
-	  //rclc_executor_add_subscription(&executor, &subscriber_cmd_vel_status, &cmd_vel_status_msg, &cmd_vel_status_callback, ON_NEW_DATA);
 
-	  // initialize message memory
-	   /* pub_str_msg.data.data = (char * ) malloc(ARRAY_LEN * sizeof(char));
-	    pub_str_msg.data.size = 0;
-	    pub_str_msg.data.capacity = ARRAY_LEN;
 
-	    sub_str_msg.data.data = (char * ) malloc(ARRAY_LEN * sizeof(char));
-	    sub_str_msg.data.size = 0;
-	    sub_str_msg.data.capacity = ARRAY_LEN;*/
 
 	    // execute subscriber
 	    rclc_executor_spin(&executor);
 
 	    //organize
-	    rcl_publisher_fini(&subscriber_cmd_vel_status, &node);
 	    rcl_subscription_fini(&subscriber_cmd_vel, &node);
-	    rcl_publisher_fini(&subscriber_cmd_vel_status, &node);
 	    rcl_node_fini(&node);
 
 
