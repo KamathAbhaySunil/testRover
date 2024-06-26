@@ -1,4 +1,4 @@
-# Astra Robotics Mars Rover Project
+# The Astra Rover Project
 
 Hello guys, this repo consists of everything that I prepared and contributed to the astra URC rover submission. I made sure to learn everything and as much as I can by myself and learn from the team to better help me in my further endeavors
 
@@ -46,10 +46,10 @@ Astra Robotics, the interdisciplinary student technical team at RV College of En
 ### Components
 - microROS sending and recieving data
 
-Contributing
+### Contributing
 We welcome contributions from the community. Please read our Contributing Guide to learn how you can help.
 
-License
+### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Contact
