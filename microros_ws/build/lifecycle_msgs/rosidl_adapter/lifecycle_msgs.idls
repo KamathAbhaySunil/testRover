@@ -1,8 +1,0 @@
-/home/abhay/microros_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:msg/State.idl
-/home/abhay/microros_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:msg/Transition.idl
-/home/abhay/microros_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:msg/TransitionDescription.idl
-/home/abhay/microros_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:msg/TransitionEvent.idl
-/home/abhay/microros_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:srv/ChangeState.idl
-/home/abhay/microros_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:srv/GetAvailableStates.idl
-/home/abhay/microros_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:srv/GetAvailableTransitions.idl
-/home/abhay/microros_ws/build/lifecycle_msgs/rosidl_adapter/lifecycle_msgs:srv/GetState.idl
