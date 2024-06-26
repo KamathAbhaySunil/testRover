@@ -4,14 +4,11 @@ Hello guys, this repo consists of everything that I prepared and contributed to 
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Project Structure](#project-structure)
 - [Tasks](#tasks)
   - [Completed Tasks](#completed-tasks)
   - [Tasks Under Progress](#tasks-under-progress)
   - [Tasks Left](#tasks-left)
 - [Version](#version)
-  - [Components](#components)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
