@@ -18,12 +18,6 @@ Hello guys, this repo consists of everything that I prepared and contributed to 
 ## Introduction
 Astra Robotics, the interdisciplinary student technical team at RV College of Engineering (RVCE) in Bangalore, builds robots, including Mars rovers and other iteration projects. We also engage in outreach programs teaching robotics to various high schools and hosting competitions.
 
-## Project Structure
-- `docs/` - Documentation files
-- `src/` - Source code for the rover
-- `hardware/` - Hardware design files
-- `tests/` - Testing scripts and data
-
 ## Tasks
 
 ### Completed Tasks
