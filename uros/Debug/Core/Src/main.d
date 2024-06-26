@@ -181,10 +181,16 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/rmw_microros/ping.h \
  ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/rmw_microros/timing.h \
  ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/rmw_microros/custom_transport.h \
+ ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/string.h \
+ ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/detail/string__struct.h \
+ ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/rosidl_runtime_c/string.h \
+ ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/rosidl_runtime_c/primitives_sequence.h \
+ ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/detail/string__functions.h \
+ ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/rosidl_generator_c__visibility_control.h \
+ ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/detail/string__type_support.h \
  ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/int32.h \
  ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/detail/int32__struct.h \
  ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/detail/int32__functions.h \
- ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/rosidl_generator_c__visibility_control.h \
  ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/detail/int32__type_support.h \
  ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/geometry_msgs/msg/twist.h \
  ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/geometry_msgs/msg/detail/twist__struct.h \
@@ -375,10 +381,16 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/rmw_microros/ping.h:
 ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/rmw_microros/timing.h:
 ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/rmw_microros/custom_transport.h:
+../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/string.h:
+../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/detail/string__struct.h:
+../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/rosidl_runtime_c/string.h:
+../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/rosidl_runtime_c/primitives_sequence.h:
+../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/detail/string__functions.h:
+../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/rosidl_generator_c__visibility_control.h:
+../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/detail/string__type_support.h:
 ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/int32.h:
 ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/detail/int32__struct.h:
 ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/detail/int32__functions.h:
-../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/rosidl_generator_c__visibility_control.h:
 ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/std_msgs/msg/detail/int32__type_support.h:
 ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/geometry_msgs/msg/twist.h:
 ../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include/geometry_msgs/msg/detail/twist__struct.h:

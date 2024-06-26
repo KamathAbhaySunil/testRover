@@ -31,24 +31,24 @@
 #include <uxr/client/transport.h>
 #include <rmw_microxrcedds_c/config.h>
 #include <rmw_microros/rmw_microros.h>
-
+#include <std_msgs/msg/string.h>
 #include <std_msgs/msg/int32.h>
-#include <geometry_msgs/msg/twist.h>											//This line imports the geometry_msgs library of ROS2. /cmd_vel is of the Twist type of geometry message
+
+#include <stdio.h>
+#include <string.h>
+#include <geometry_msgs/msg/twist.h> //MAKE SURE TO INCLUDE THE MESSAGE TYPE WE WISH TO USE
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -59,13 +59,22 @@ DMA_HandleTypeDef hdma_usart2_rx;
 DMA_HandleTypeDef hdma_usart2_tx;
 
 /* Definitions for defaultTask */
-osThreadId_t defaultTaskHandle;
+osThreadId_t defaultTaskHandle; 								/*the default task is initialized here by the ide itself,
+																	essentially this set of code is executed once*/
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
   .stack_size = 3000 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
 /* USER CODE BEGIN PV */
+
+//Initialize private variables in this block
+
+
+static int32_t leftWheelEncoder = 0;
+static int32_t rightWheelEncoder = 0;
+
+//declare the variables for wheel velocity as well as declare certain constants in this code block
 
 double leftWheelVelocity;											//initialize the left wheel velocity variable this is in m/s
 double rightWheelVelocity;											//initialize right wheel velocity variable in m/s
@@ -75,7 +84,6 @@ double rightWheelRPM;												//initializing the right wheel RPM
 
 const double length = 0.225;					   					//this is the distance between the left and right wheels divided by two in meters
 const double wheelRadius = 0.07;									//radius of the wheel
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -92,6 +100,7 @@ void StartDefaultTask(void *argument);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
 //IN THIS BLOCK WE WRITE CALLBACKS FOR MICROROS
 
 void cmd_vel_callback(const void*msgin)											//defining the cmd_vel callback
@@ -106,16 +115,12 @@ void cmd_vel_callback(const void*msgin)											//defining the cmd_vel callbac
 	rightWheelRPM = rightWheelVelocity*60/6.2831;								//same as what we did for the left wheel
 
 	if (leftWheelRPM >= 0 && leftWheelRPM <= 1000 && rightWheelRPM >= 0 && rightWheelRPM <= 1000){ //To move the bot front
-		HAL_GPIO_WritePin(green_GPIO_Port, green_Pin, 1); 						//while moving forward we want green light to turn on
-		HAL_GPIO_WritePin(red_GPIO_Port, red_Pin, 0); 							//and hence red light is turned off
 		TIM3->CCR1 = leftWheelRPM;
 		TIM3->CCR2 = 0;
 		TIM3->CCR3 = rightWheelRPM;
 		TIM3->CCR4 = 0;
 	}
 	else if (leftWheelRPM <= 0 && leftWheelRPM >= -1000 && rightWheelRPM <= 0 && rightWheelRPM >= -1000){ //To move the bot back
-		HAL_GPIO_WritePin(green_GPIO_Port, green_Pin, 0);						//now we are moving backwards so green is turned off
-		HAL_GPIO_WritePin(red_GPIO_Port, red_Pin, 1);							//and red is turned on
 		TIM3->CCR1 = 0;
 		TIM3->CCR2 = -leftWheelRPM;
 		TIM3->CCR3 = 0;
@@ -141,6 +146,29 @@ void cmd_vel_callback(const void*msgin)											//defining the cmd_vel callbac
 	}
 
 
+	//THE BELOW CODE IS TO MOVE THE BOT FRONT AND BACK
+
+
+/*	if (msg->linear.x >= 0){
+		HAL_GPIO_WritePin(green_GPIO_Port, green_Pin, 1); 						//while moving forward we want green light to turn on
+		HAL_GPIO_WritePin(red_GPIO_Port, red_Pin, 0); 							//and hence red light is turned off
+		TIM3->CCR1 = 200*msg->linear.x;   										//RPWM1 set to high (PA6)
+		TIM3->CCR2 = 0; 														//RPWM2 set to low  (PA7)
+		TIM3->CCR3 = 200*msg->linear.x;  										//LPWM1 set to high (PB0)
+		TIM3->CCR4 = 0; 														//LPWM2 set to low  (PB1)
+
+	}else{
+		HAL_GPIO_WritePin(green_GPIO_Port, green_Pin, 0);						//now we are moving backwards so green is turned off
+		HAL_GPIO_WritePin(red_GPIO_Port, red_Pin, 1);							//and red is turned on
+		TIM3->CCR1 = 0; 														//RPWM1 set to low
+		TIM3->CCR2 = -200*msg->linear.x;										//RPWM2 set to high
+		TIM3->CCR3 = 0; 														//LPWM1 set to low
+		TIM3->CCR4 = -200*msg->linear.x;										//LPWM2 set to high
+	}
+*/
+}
+
+
 /* USER CODE END 0 */
 
 /**
@@ -149,7 +177,6 @@ void cmd_vel_callback(const void*msgin)											//defining the cmd_vel callbac
   */
 int main(void)
 {
-
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -217,14 +244,16 @@ int main(void)
   osKernelStart();
 
   /* We should never get here as control is now taken by the scheduler */
-
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+
   }
   /* USER CODE END 3 */
 }
@@ -254,7 +283,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLM = 8;
   RCC_OscInitStruct.PLL.PLLN = 100;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-  RCC_OscInitStruct.PLL.PLLQ = 8;
+  RCC_OscInitStruct.PLL.PLLQ = 4;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -287,6 +316,7 @@ static void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 0 */
 
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
   TIM_MasterConfigTypeDef sMasterConfig = {0};
   TIM_OC_InitTypeDef sConfigOC = {0};
 
@@ -294,11 +324,20 @@ static void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 1 */
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 0;
+  htim3.Init.Prescaler = 9;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 65535;
+  htim3.Init.Period = 999;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
   if (HAL_TIM_PWM_Init(&htim3) != HAL_OK)
   {
     Error_Handler();
@@ -400,16 +439,17 @@ static void MX_GPIO_Init(void)
 /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOD, green_Pin|red_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOD, green_Pin|orange_Pin|red_Pin|blue_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : green_Pin red_Pin */
-  GPIO_InitStruct.Pin = green_Pin|red_Pin;
+  /*Configure GPIO pins : green_Pin orange_Pin red_Pin blue_Pin */
+  GPIO_InitStruct.Pin = green_Pin|orange_Pin|red_Pin|blue_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -441,7 +481,11 @@ void * microros_zero_allocate(size_t number_of_elements, size_t size_of_element,
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN 5 */
-	 // micro-ROS configuration
+
+	  // micro-ROS configuration
+	  char test_array[ARRAY_LEN];
+	  memset(test_array,'z',ARRAY_LEN);
+
 
 	  rmw_uros_set_custom_transport(
 	    true,
@@ -461,13 +505,18 @@ void StartDefaultTask(void *argument)
 	      printf("Error on default allocators (line %d)\n", __LINE__);
 	  }
 
-	  // micro-ROS app
+	  // micro-ROS application
 
 	  rcl_subscription_t subscriber_cmd_vel;
 	  geometry_msgs__msg__Twist cmd_vel_msg;
 
-	  rcl_publisher_t publisher;
-	  std_msgs__msg__Int32 msg;
+
+	  //std_msgs__msg__String sub_str_msg;
+	  //rcl_subscription_t subscriber_cmd_vel_status;
+	  //geometry_msgs__msg__Twist cmd_vel_status_msg;
+	  /*rcl_publisher_t publisher, publisher_string;
+	  std_msgs__msg__Int32 msg;*/
+
 	  rclc_support_t support;
 	  rcl_allocator_t allocator;
 	  rcl_node_t node;
@@ -481,6 +530,21 @@ void StartDefaultTask(void *argument)
 	  rclc_node_init_default(&node, "microROS", "", &support);
 
 	  // create publisher
+
+	  /*rclc_publisher_init_best_effort(
+			  &publisher_string,
+			  &node,
+			  ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, String),
+			  "Brother");
+	  */
+
+	  /*rclc_publisher_init_default(
+			  &subscriber_cmd_vel_status,
+			  &node,
+			  ROSIDL_GET_MSG_TYPE_SUPPORT(geometry_msgs, msg, Twist),
+	    "status_cmd_vel");
+	    */
+	  /*rclc_publisher_init_best_effort(&cmd_vel_msg, &node, Twist, "velocity");*/
 	  /*rclc_publisher_init_default(
 	    &publisher,
 	    &node,
@@ -488,24 +552,32 @@ void StartDefaultTask(void *argument)
 	    "cubemx_publisher");
 	    */
 
-	  // create subscriber
+
+
+	  //create subscriber
 	  rclc_subscription_init_default(
-	  	    &subscriber_cmd_vel,
-	  	    &node,
-	  	    ROSIDL_GET_MSG_TYPE_SUPPORT(geometry_msgs, msg, Twist),
-	  	    "cmd_vel");
+	    &subscriber_cmd_vel,
+	    &node,
+	    ROSIDL_GET_MSG_TYPE_SUPPORT(geometry_msgs, msg, Twist),
+	    "cmd_vel");
 
 	  //create executor
-	  	  rclc_executor_t executor = rclc_executor_get_zero_initialized_executor();
-	  	  rclc_executor_init(&executor, &support.context, 2, &allocator);
-	  	  rclc_executor_add_subscription(&executor, &subscriber_cmd_vel, &cmd_vel_msg, &cmd_vel_callback, ON_NEW_DATA);
+	  rclc_executor_t executor = rclc_executor_get_zero_initialized_executor();
+	  rclc_executor_init(&executor, &support.context, 2, &allocator);
+	  rclc_executor_add_subscription(&executor, &subscriber_cmd_vel, &cmd_vel_msg, &cmd_vel_callback, ON_NEW_DATA);
 
-		    // execute subscriber
-		    rclc_executor_spin(&executor);
 
-		    //organize
-		    rcl_subscription_fini(&subscriber_cmd_vel, &node);
-		    rcl_node_fini(&node);
+
+	    // execute subscriber
+	    rclc_executor_spin(&executor);
+
+	    //organize
+	    rcl_subscription_fini(&subscriber_cmd_vel, &node);
+	    rcl_node_fini(&node);
+
+
+
+
 
 	  /*for(;;)
 	  {
@@ -516,8 +588,12 @@ void StartDefaultTask(void *argument)
 	    }
 
 	    msg.data++;
-	    osDelay(1);
+	    osDelay(10);
+
 	  }*/
+
+
+
   /* USER CODE END 5 */
 }
 
