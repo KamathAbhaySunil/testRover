@@ -1,4 +1,4 @@
-# The Astra Rover Project
+# My Astra Rover Project
 
 Hello guys, this repo consists of everything that I prepared and contributed to the astra URC rover submission. I made sure to learn everything and as much as I can by myself and learn from the team to better help me in my further endeavors
 
