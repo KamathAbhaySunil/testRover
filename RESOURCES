@@ -1,0 +1,2 @@
+## microROS
+To set up microROS I followed https://youtu.be/rOlcAEvJsm4?si=9bFdAMLE3w0wSqnX. Just note that while setting up DMA, in the RX settings make sure to set it to circular mode and not normal as the STM will face trouble while subscribing 
