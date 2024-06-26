@@ -51,7 +51,7 @@ We welcome contributions from the community. Please read our Contributing Guide 
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Contact
+### Contact
 Kamath Abhay Sunil
 Technical Team 2nd Year Member, Astra Robotics Team
 RV College of Engineering (RVCE)
