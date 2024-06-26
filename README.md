@@ -35,17 +35,12 @@ Astra Robotics, the interdisciplinary student technical team at RV College of En
 
 ## Version
 ### Current Version: 1.0.0
-
-### Components
 - microROS sending and recieving data
 
-### Contributing
-We welcome contributions from the community. Please read our Contributing Guide to learn how you can help.
-
-### License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Contact
+## Contact
 Kamath Abhay Sunil
 Technical Team 2nd Year Member, Astra Robotics Team
 RV College of Engineering (RVCE)
