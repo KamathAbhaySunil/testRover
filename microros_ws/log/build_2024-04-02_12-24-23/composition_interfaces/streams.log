@@ -1,0 +1,333 @@
+[0.023s] Invoking command in '/home/abhay/microros_ws/build/composition_interfaces': AMENT_PREFIX_PATH=/home/abhay/microros_ws/install/rcl_interfaces:/home/abhay/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abhay/microros_ws/install/rcl_interfaces:/home/abhay/microros_ws/install/builtin_interfaces:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/abhay/microros_ws/install/microcdr:/home/abhay/microros_ws/install/micro_ros_setup:/home/abhay/ros2_ws/install/py_srvcli:/home/abhay/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abhay/microros_ws/install/rcl_interfaces/lib:/home/abhay/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abhay/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/abhay/microros_ws/src/ros2/rcl_interfaces/composition_interfaces -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/abhay/microros_ws/install/composition_interfaces
+[0.133s] -- The C compiler identification is GNU 11.4.0
+[0.341s] -- The CXX compiler identification is GNU 11.4.0
+[0.365s] -- Detecting C compiler ABI info
+[0.670s] -- Detecting C compiler ABI info - done
+[0.700s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.700s] -- Detecting C compile features
+[0.701s] -- Detecting C compile features - done
+[0.706s] -- Detecting CXX compiler ABI info
+[1.093s] -- Detecting CXX compiler ABI info - done
+[1.124s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.125s] -- Detecting CXX compile features
+[1.125s] -- Detecting CXX compile features - done
+[1.130s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.756s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.133s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.155s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.180s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.396s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.560s] -- Found rcl_interfaces: 1.2.1 (/home/abhay/microros_ws/install/rcl_interfaces/share/rcl_interfaces/cmake)
+[3.989s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.924s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.196s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.315s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[6.319s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[6.442s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[6.442s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.443s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.443s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[6.560s] -- Found PythonExtra: .so  
+[6.776s] -- Configuring done
+[6.967s] -- Generating done
+[6.972s] -- Build files have been written to: /home/abhay/microros_ws/build/composition_interfaces
+[7.037s] Invoked command in '/home/abhay/microros_ws/build/composition_interfaces' returned '0': AMENT_PREFIX_PATH=/home/abhay/microros_ws/install/rcl_interfaces:/home/abhay/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abhay/microros_ws/install/rcl_interfaces:/home/abhay/microros_ws/install/builtin_interfaces:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/abhay/microros_ws/install/microcdr:/home/abhay/microros_ws/install/micro_ros_setup:/home/abhay/ros2_ws/install/py_srvcli:/home/abhay/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abhay/microros_ws/install/rcl_interfaces/lib:/home/abhay/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abhay/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/abhay/microros_ws/src/ros2/rcl_interfaces/composition_interfaces -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/abhay/microros_ws/install/composition_interfaces
+[7.038s] Invoking command in '/home/abhay/microros_ws/build/composition_interfaces': AMENT_PREFIX_PATH=/home/abhay/microros_ws/install/rcl_interfaces:/home/abhay/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abhay/microros_ws/install/rcl_interfaces:/home/abhay/microros_ws/install/builtin_interfaces:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/abhay/microros_ws/install/microcdr:/home/abhay/microros_ws/install/micro_ros_setup:/home/abhay/ros2_ws/install/py_srvcli:/home/abhay/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abhay/microros_ws/install/rcl_interfaces/lib:/home/abhay/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abhay/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/abhay/microros_ws/build/composition_interfaces -- -j16 -l16
+[7.250s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[7.324s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[7.448s] [  3%] Built target ament_cmake_python_copy_composition_interfaces
+[8.566s] running egg_info
+[8.568s] creating composition_interfaces.egg-info
+[8.569s] writing composition_interfaces.egg-info/PKG-INFO
+[8.569s] writing dependency_links to composition_interfaces.egg-info/dependency_links.txt
+[8.570s] writing top-level names to composition_interfaces.egg-info/top_level.txt
+[8.571s] writing manifest file 'composition_interfaces.egg-info/SOURCES.txt'
+[8.575s] reading manifest file 'composition_interfaces.egg-info/SOURCES.txt'
+[8.577s] writing manifest file 'composition_interfaces.egg-info/SOURCES.txt'
+[8.721s] [  3%] Built target ament_cmake_python_build_composition_interfaces_egg
+[10.130s] [  3%] Built target composition_interfaces__cpp
+[10.202s] [  5%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_generator_c.dir/rosidl_generator_c/composition_interfaces/srv/detail/load_node__functions.c.o[0m
+[10.401s] [  6%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_generator_c.dir/rosidl_generator_c/composition_interfaces/srv/detail/unload_node__functions.c.o[0m
+[10.558s] [  8%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_generator_c.dir/rosidl_generator_c/composition_interfaces/srv/detail/list_nodes__functions.c.o[0m
+[10.695s] [ 10%] [32m[1mLinking C shared library libcomposition_interfaces__rosidl_generator_c.so[0m
+[10.780s] [ 10%] Built target composition_interfaces__rosidl_generator_c
+[10.837s] [ 11%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[11.715s] [ 13%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/composition_interfaces/srv/load_node__type_support.cpp.o[0m
+[12.079s] [ 15%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/composition_interfaces/srv/unload_node__type_support.cpp.o[0m
+[12.366s] [ 16%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/composition_interfaces/srv/list_nodes__type_support.cpp.o[0m
+[12.798s] [ 18%] [32m[1mLinking CXX shared library libcomposition_interfaces__rosidl_typesupport_cpp.so[0m
+[12.856s] [ 18%] Built target composition_interfaces__rosidl_typesupport_cpp
+[12.870s] [ 20%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[13.501s] [ 22%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/composition_interfaces/srv/detail/load_node__type_support.c.o[0m
+[13.564s] [ 23%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/composition_interfaces/srv/detail/unload_node__type_support.c.o[0m
+[13.612s] [ 25%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/composition_interfaces/srv/detail/list_nodes__type_support.c.o[0m
+[13.673s] [ 27%] [32m[1mLinking C shared library libcomposition_interfaces__rosidl_typesupport_introspection_c.so[0m
+[13.718s] [ 27%] Built target composition_interfaces__rosidl_typesupport_introspection_c
+[13.734s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[14.690s] [ 30%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/composition_interfaces/srv/detail/load_node__type_support_c.cpp.o[0m
+[15.289s] [ 32%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/composition_interfaces/srv/detail/unload_node__type_support_c.cpp.o[0m
+[15.703s] [ 33%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/composition_interfaces/srv/detail/list_nodes__type_support_c.cpp.o[0m
+[16.073s] [ 35%] [32m[1mLinking CXX shared library libcomposition_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[16.169s] [ 35%] Built target composition_interfaces__rosidl_typesupport_fastrtps_c
+[16.179s] [ 37%] [34m[1mGenerating C type support for eProsima Micro XRCE-DDS[0m
+[16.825s] [ 38%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/composition_interfaces/srv/detail/microxrcedds/load_node__type_support_c.c.o[0m
+[16.926s] [ 40%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/composition_interfaces/srv/detail/microxrcedds/unload_node__type_support_c.c.o[0m
+[17.002s] [ 42%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/composition_interfaces/srv/detail/microxrcedds/list_nodes__type_support_c.c.o[0m
+[17.083s] [ 44%] [32m[1mLinking C shared library libcomposition_interfaces__rosidl_typesupport_microxrcedds_c.so[0m
+[17.149s] [ 44%] Built target composition_interfaces__rosidl_typesupport_microxrcedds_c
+[17.164s] [ 45%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[17.963s] [ 47%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/composition_interfaces/srv/load_node__type_support.cpp.o[0m
+[18.011s] [ 49%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/composition_interfaces/srv/unload_node__type_support.cpp.o[0m
+[18.064s] [ 50%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/composition_interfaces/srv/list_nodes__type_support.cpp.o[0m
+[18.113s] [ 52%] [32m[1mLinking CXX shared library libcomposition_interfaces__rosidl_typesupport_c.so[0m
+[18.159s] [ 52%] Built target composition_interfaces__rosidl_typesupport_c
+[18.170s] [ 54%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[18.760s] [ 55%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/composition_interfaces/srv/detail/load_node__type_support.cpp.o[0m
+[19.818s] [ 57%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/composition_interfaces/srv/detail/unload_node__type_support.cpp.o[0m
+[20.404s] [ 59%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/composition_interfaces/srv/detail/list_nodes__type_support.cpp.o[0m
+[20.839s] [ 61%] [32m[1mLinking CXX shared library libcomposition_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[20.940s] [ 61%] Built target composition_interfaces__rosidl_typesupport_introspection_cpp
+[20.951s] [ 62%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[21.530s] [ 64%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/composition_interfaces/srv/detail/dds_fastrtps/load_node__type_support.cpp.o[0m
+[22.179s] [ 66%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/composition_interfaces/srv/detail/dds_fastrtps/unload_node__type_support.cpp.o[0m
+[22.728s] [ 67%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/composition_interfaces/srv/detail/dds_fastrtps/list_nodes__type_support.cpp.o[0m
+[23.308s] [ 69%] [32m[1mLinking CXX shared library libcomposition_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[23.389s] [ 69%] Built target composition_interfaces__rosidl_typesupport_fastrtps_cpp
+[23.397s] [ 71%] [34m[1mGenerating C++ type support for eProsima Micro XRCE-DDS[0m
+[23.892s] [ 72%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/composition_interfaces/srv/detail/microxrcedds/load_node__type_support_cpp.cpp.o[0m
+[24.264s] [ 74%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/composition_interfaces/srv/detail/microxrcedds/unload_node__type_support_cpp.cpp.o[0m
+[24.497s] [ 76%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/composition_interfaces/srv/detail/microxrcedds/list_nodes__type_support_cpp.cpp.o[0m
+[24.812s] [ 77%] [32m[1mLinking CXX shared library libcomposition_interfaces__rosidl_typesupport_microxrcedds_cpp.so[0m
+[24.889s] [ 77%] Built target composition_interfaces__rosidl_typesupport_microxrcedds_cpp
+[24.905s] [ 77%] Built target composition_interfaces
+[24.924s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[25.870s] [ 79%] Built target composition_interfaces__py
+[25.890s] [ 81%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_generator_py.dir/rosidl_generator_py/composition_interfaces/srv/_load_node_s.c.o[0m
+[25.892s] [ 84%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_generator_py.dir/rosidl_generator_py/composition_interfaces/srv/_unload_node_s.c.o[0m
+[25.893s] [ 84%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_generator_py.dir/rosidl_generator_py/composition_interfaces/srv/_list_nodes_s.c.o[0m
+[26.052s] [ 86%] [32m[1mLinking C shared library rosidl_generator_py/composition_interfaces/libcomposition_interfaces__rosidl_generator_py.so[0m
+[26.108s] [ 86%] Built target composition_interfaces__rosidl_generator_py
+[26.138s] [ 93%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[26.138s] [ 93%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[26.138s] [ 93%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_microxrcedds_c__pyext.dir/rosidl_generator_py/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c.o[0m
+[26.139s] [ 93%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[26.273s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/composition_interfaces/composition_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[26.315s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/composition_interfaces/composition_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[26.315s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/composition_interfaces/composition_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[26.316s] [100%] [32m[1mLinking C shared library rosidl_generator_py/composition_interfaces/composition_interfaces_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so[0m
+[26.317s] [100%] Built target composition_interfaces__rosidl_typesupport_c__pyext
+[26.379s] [100%] Built target composition_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[26.381s] [100%] Built target composition_interfaces__rosidl_typesupport_introspection_c__pyext
+[26.385s] [100%] Built target composition_interfaces__rosidl_typesupport_microxrcedds_c__pyext
+[26.404s] Invoked command in '/home/abhay/microros_ws/build/composition_interfaces' returned '0': AMENT_PREFIX_PATH=/home/abhay/microros_ws/install/rcl_interfaces:/home/abhay/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abhay/microros_ws/install/rcl_interfaces:/home/abhay/microros_ws/install/builtin_interfaces:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/abhay/microros_ws/install/microcdr:/home/abhay/microros_ws/install/micro_ros_setup:/home/abhay/ros2_ws/install/py_srvcli:/home/abhay/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abhay/microros_ws/install/rcl_interfaces/lib:/home/abhay/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abhay/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/abhay/microros_ws/build/composition_interfaces -- -j16 -l16
+[26.580s] Invoking command in '/home/abhay/microros_ws/build/composition_interfaces': AMENT_PREFIX_PATH=/home/abhay/microros_ws/install/rcl_interfaces:/home/abhay/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abhay/microros_ws/install/rcl_interfaces:/home/abhay/microros_ws/install/builtin_interfaces:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/abhay/microros_ws/install/microcdr:/home/abhay/microros_ws/install/micro_ros_setup:/home/abhay/ros2_ws/install/py_srvcli:/home/abhay/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abhay/microros_ws/install/rcl_interfaces/lib:/home/abhay/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abhay/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/abhay/microros_ws/build/composition_interfaces
+[26.592s] -- Install configuration: ""
+[26.592s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/ament_index/resource_index/rosidl_interfaces/composition_interfaces
+[26.593s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[26.593s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg
+[26.593s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg/rosidl_generator_c__visibility_control.h
+[26.593s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[26.593s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[26.593s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__type_support.h
+[26.594s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__functions.h
+[26.594s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__type_support.h
+[26.594s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__functions.h
+[26.594s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__functions.h
+[26.594s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__struct.h
+[26.595s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__functions.c
+[26.595s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__struct.h
+[26.595s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__functions.c
+[26.595s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__functions.c
+[26.595s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__type_support.h
+[26.596s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__struct.h
+[26.596s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/load_node.h
+[26.596s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/unload_node.h
+[26.596s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/list_nodes.h
+[26.596s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/library_path.sh
+[26.596s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/library_path.dsv
+[26.596s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_generator_c.so
+[26.597s] -- Set runtime path of "/home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_generator_c.so" to ""
+[26.597s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces
+[26.597s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/msg
+[26.597s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/msg/rosidl_typesupport_microxrcedds_c__visibility_control.h
+[26.597s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv
+[26.598s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv/detail
+[26.598s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/load_node__rosidl_typesupport_microxrcedds_c.h
+[26.598s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/microxrcedds
+[26.598s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_microxrcedds_c.h
+[26.598s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_microxrcedds_c.h
+[26.598s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_microxrcedds_c.so
+[26.598s] -- Set runtime path of "/home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_microxrcedds_c.so" to ""
+[26.598s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[26.599s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg
+[26.599s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[26.599s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[26.599s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[26.599s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__rosidl_typesupport_fastrtps_c.h
+[26.599s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_fastrtps_c.h
+[26.599s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_fastrtps_c.h
+[26.599s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_c.so
+[26.600s] -- Set runtime path of "/home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[26.600s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[26.600s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg
+[26.600s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[26.600s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[26.600s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[26.600s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_introspection_c.h
+[26.600s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__rosidl_typesupport_introspection_c.h
+[26.601s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__type_support.c
+[26.601s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_introspection_c.h
+[26.601s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__type_support.c
+[26.601s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__type_support.c
+[26.601s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_introspection_c.so
+[26.601s] -- Set runtime path of "/home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[26.601s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_c.so
+[26.601s] -- Set runtime path of "/home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_c.so" to ""
+[26.602s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[26.602s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[26.602s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/unload_node.hpp
+[26.602s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/load_node.hpp
+[26.602s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[26.602s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__struct.hpp
+[26.602s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__traits.hpp
+[26.603s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__builder.hpp
+[26.603s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__struct.hpp
+[26.603s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__builder.hpp
+[26.603s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__traits.hpp
+[26.603s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__builder.hpp
+[26.603s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__traits.hpp
+[26.603s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__struct.hpp
+[26.604s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/list_nodes.hpp
+[26.604s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces
+[26.604s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/msg
+[26.604s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/msg/rosidl_typesupport_microxrcedds_cpp__visibility_control.h
+[26.604s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv
+[26.604s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv/detail
+[26.604s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/load_node__rosidl_typesupport_microxrcedds_cpp.hpp
+[26.605s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_microxrcedds_cpp.hpp
+[26.605s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/microxrcedds
+[26.605s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/microxrcedds/load_node__type_support_cpp.cpp
+[26.605s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/microxrcedds/unload_node__type_support_cpp.cpp
+[26.605s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/microxrcedds/list_nodes__type_support_cpp.cpp
+[26.605s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_microxrcedds_cpp.hpp
+[26.605s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_microxrcedds_cpp.so
+[26.605s] -- Set runtime path of "/home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_microxrcedds_cpp.so" to ""
+[26.606s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[26.606s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg
+[26.606s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[26.606s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[26.606s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[26.606s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__rosidl_typesupport_fastrtps_cpp.hpp
+[26.606s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_fastrtps_cpp.hpp
+[26.606s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_fastrtps_cpp.hpp
+[26.607s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/dds_fastrtps
+[26.607s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[26.607s] -- Set runtime path of "/home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[26.607s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[26.607s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[26.608s] -- Up-to-date: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[26.608s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__type_support.cpp
+[26.608s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__type_support.cpp
+[26.608s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__rosidl_typesupport_introspection_cpp.hpp
+[26.608s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_introspection_cpp.hpp
+[26.608s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__type_support.cpp
+[26.608s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_introspection_cpp.hpp
+[26.608s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_introspection_cpp.so
+[26.608s] -- Set runtime path of "/home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[26.609s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_cpp.so
+[26.609s] -- Set runtime path of "/home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_cpp.so" to ""
+[26.609s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/pythonpath.sh
+[26.609s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/pythonpath.dsv
+[26.609s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info
+[26.610s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info/top_level.txt
+[26.610s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info/SOURCES.txt
+[26.610s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info/dependency_links.txt
+[26.610s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info/PKG-INFO
+[26.610s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces
+[26.610s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[26.610s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[26.611s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[26.611s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c
+[26.611s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[26.611s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_c.c
+[26.611s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/libcomposition_interfaces__rosidl_generator_py.so
+[26.611s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[26.611s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[26.612s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/__init__.py
+[26.612s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv
+[26.612s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_load_node_s.c
+[26.612s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_list_nodes.py
+[26.612s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_unload_node_s.c
+[26.612s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_load_node.py
+[26.612s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_list_nodes_s.c
+[26.612s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_unload_node.py
+[26.613s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/__init__.py
+[26.676s] Listing '/home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces'...
+[26.677s] Compiling '/home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/__init__.py'...
+[26.677s] Listing '/home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv'...
+[26.677s] Compiling '/home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/__init__.py'...
+[26.677s] Compiling '/home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_list_nodes.py'...
+[26.677s] Compiling '/home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_load_node.py'...
+[26.677s] Compiling '/home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_unload_node.py'...
+[26.683s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[26.683s] -- Set runtime path of "/home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so" to ""
+[26.683s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[26.683s] -- Set runtime path of "/home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[26.684s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[26.684s] -- Set runtime path of "/home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[26.684s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[26.685s] -- Set runtime path of "/home/abhay/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[26.685s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_generator_py.so
+[26.685s] -- Set runtime path of "/home/abhay/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_generator_py.so" to ""
+[26.685s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/LoadNode.idl
+[26.686s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/ListNodes.idl
+[26.686s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/UnloadNode.idl
+[26.686s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/LoadNode.srv
+[26.686s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/LoadNode_Request.msg
+[26.686s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/LoadNode_Response.msg
+[26.686s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/ListNodes.srv
+[26.686s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/ListNodes_Request.msg
+[26.687s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/ListNodes_Response.msg
+[26.687s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/UnloadNode.srv
+[26.687s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/UnloadNode_Request.msg
+[26.687s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/UnloadNode_Response.msg
+[26.687s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/ament_index/resource_index/package_run_dependencies/composition_interfaces
+[26.688s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/ament_index/resource_index/parent_prefix_path/composition_interfaces
+[26.688s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/ament_prefix_path.sh
+[26.688s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/ament_prefix_path.dsv
+[26.688s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/path.sh
+[26.688s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/path.dsv
+[26.688s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/local_setup.bash
+[26.689s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/local_setup.sh
+[26.689s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/local_setup.zsh
+[26.689s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/local_setup.dsv
+[26.689s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/package.dsv
+[26.689s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/ament_index/resource_index/packages/composition_interfaces
+[26.690s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_cExport.cmake
+[26.690s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_cExport-noconfig.cmake
+[26.690s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[26.690s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[26.690s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[26.690s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[26.691s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_cExport.cmake
+[26.691s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[26.691s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_cppExport.cmake
+[26.691s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[26.691s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[26.692s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[26.692s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[26.692s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_cppExport.cmake
+[26.692s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[26.692s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_pyExport.cmake
+[26.692s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[26.693s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/rosidl_cmake-extras.cmake
+[26.693s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[26.693s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[26.693s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[26.693s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[26.693s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[26.694s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[26.694s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfacesConfig.cmake
+[26.694s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfacesConfig-version.cmake
+[26.694s] -- Installing: /home/abhay/microros_ws/install/composition_interfaces/share/composition_interfaces/package.xml
+[26.698s] Invoked command in '/home/abhay/microros_ws/build/composition_interfaces' returned '0': AMENT_PREFIX_PATH=/home/abhay/microros_ws/install/rcl_interfaces:/home/abhay/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abhay/microros_ws/install/rcl_interfaces:/home/abhay/microros_ws/install/builtin_interfaces:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/abhay/microros_ws/install/microcdr:/home/abhay/microros_ws/install/micro_ros_setup:/home/abhay/ros2_ws/install/py_srvcli:/home/abhay/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abhay/microros_ws/install/rcl_interfaces/lib:/home/abhay/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abhay/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/abhay/microros_ws/build/composition_interfaces

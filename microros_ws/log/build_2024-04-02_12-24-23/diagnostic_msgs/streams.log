@@ -1,0 +1,414 @@
+[0.018s] Invoking command in '/home/abhay/microros_ws/build/diagnostic_msgs': AMENT_PREFIX_PATH=/home/abhay/microros_ws/install/geometry_msgs:/home/abhay/microros_ws/install/std_msgs:/home/abhay/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abhay/microros_ws/install/geometry_msgs:/home/abhay/microros_ws/install/std_msgs:/home/abhay/microros_ws/install/builtin_interfaces:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/abhay/microros_ws/install/microcdr:/home/abhay/microros_ws/install/micro_ros_setup:/home/abhay/ros2_ws/install/py_srvcli:/home/abhay/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abhay/microros_ws/install/geometry_msgs/lib:/home/abhay/microros_ws/install/std_msgs/lib:/home/abhay/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abhay/microros_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/abhay/microros_ws/src/ros2/common_interfaces/diagnostic_msgs -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/abhay/microros_ws/install/diagnostic_msgs
+[0.064s] -- The C compiler identification is GNU 11.4.0
+[0.108s] -- The CXX compiler identification is GNU 11.4.0
+[0.115s] -- Detecting C compiler ABI info
+[0.165s] -- Detecting C compiler ABI info - done
+[0.173s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.174s] -- Detecting C compile features
+[0.174s] -- Detecting C compile features - done
+[0.177s] -- Detecting CXX compiler ABI info
+[0.238s] -- Detecting CXX compiler ABI info - done
+[0.245s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.245s] -- Detecting CXX compile features
+[0.246s] -- Detecting CXX compile features - done
+[0.248s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.382s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.469s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.472s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.477s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.519s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.547s] -- Found std_msgs: 4.2.3 (/home/abhay/microros_ws/install/std_msgs/share/std_msgs/cmake)
+[0.852s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.168s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.560s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.581s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.582s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.609s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.609s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.609s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.609s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.628s] -- Found PythonExtra: .so  
+[1.689s] -- Configuring done
+[1.738s] -- Generating done
+[1.740s] -- Build files have been written to: /home/abhay/microros_ws/build/diagnostic_msgs
+[1.745s] Invoked command in '/home/abhay/microros_ws/build/diagnostic_msgs' returned '0': AMENT_PREFIX_PATH=/home/abhay/microros_ws/install/geometry_msgs:/home/abhay/microros_ws/install/std_msgs:/home/abhay/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abhay/microros_ws/install/geometry_msgs:/home/abhay/microros_ws/install/std_msgs:/home/abhay/microros_ws/install/builtin_interfaces:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/abhay/microros_ws/install/microcdr:/home/abhay/microros_ws/install/micro_ros_setup:/home/abhay/ros2_ws/install/py_srvcli:/home/abhay/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abhay/microros_ws/install/geometry_msgs/lib:/home/abhay/microros_ws/install/std_msgs/lib:/home/abhay/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abhay/microros_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/abhay/microros_ws/src/ros2/common_interfaces/diagnostic_msgs -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/abhay/microros_ws/install/diagnostic_msgs
+[1.746s] Invoking command in '/home/abhay/microros_ws/build/diagnostic_msgs': AMENT_PREFIX_PATH=/home/abhay/microros_ws/install/geometry_msgs:/home/abhay/microros_ws/install/std_msgs:/home/abhay/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abhay/microros_ws/install/geometry_msgs:/home/abhay/microros_ws/install/std_msgs:/home/abhay/microros_ws/install/builtin_interfaces:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/abhay/microros_ws/install/microcdr:/home/abhay/microros_ws/install/micro_ros_setup:/home/abhay/ros2_ws/install/py_srvcli:/home/abhay/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abhay/microros_ws/install/geometry_msgs/lib:/home/abhay/microros_ws/install/std_msgs/lib:/home/abhay/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abhay/microros_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/abhay/microros_ws/build/diagnostic_msgs -- -j16 -l16
+[1.782s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.790s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.798s] [  2%] Built target ament_cmake_python_copy_diagnostic_msgs
+[2.029s] running egg_info
+[2.030s] creating diagnostic_msgs.egg-info
+[2.030s] writing diagnostic_msgs.egg-info/PKG-INFO
+[2.030s] writing dependency_links to diagnostic_msgs.egg-info/dependency_links.txt
+[2.031s] writing top-level names to diagnostic_msgs.egg-info/top_level.txt
+[2.031s] writing manifest file 'diagnostic_msgs.egg-info/SOURCES.txt'
+[2.033s] reading manifest file 'diagnostic_msgs.egg-info/SOURCES.txt'
+[2.033s] writing manifest file 'diagnostic_msgs.egg-info/SOURCES.txt'
+[2.061s] [  2%] Built target ament_cmake_python_build_diagnostic_msgs_egg
+[2.725s] [  2%] Built target diagnostic_msgs__cpp
+[2.737s] [  3%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.738s] [  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.743s] [  6%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.758s] [  7%] [34m[1mGenerating C++ type support for eProsima Micro XRCE-DDS[0m
+[2.955s] [  8%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_generator_c.dir/rosidl_generator_c/diagnostic_msgs/msg/detail/diagnostic_array__functions.c.o[0m
+[2.976s] [ 10%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_generator_c.dir/rosidl_generator_c/diagnostic_msgs/msg/detail/diagnostic_status__functions.c.o[0m
+[2.994s] [ 11%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_generator_c.dir/rosidl_generator_c/diagnostic_msgs/msg/detail/key_value__functions.c.o[0m
+[3.023s] [ 12%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_generator_c.dir/rosidl_generator_c/diagnostic_msgs/srv/detail/add_diagnostics__functions.c.o[0m
+[3.096s] [ 13%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_generator_c.dir/rosidl_generator_c/diagnostic_msgs/srv/detail/self_test__functions.c.o[0m
+[3.290s] [ 15%] [32m[1mLinking C shared library libdiagnostic_msgs__rosidl_generator_c.so[0m
+[3.461s] [ 15%] Built target diagnostic_msgs__rosidl_generator_c
+[3.515s] [ 16%] [34m[1mGenerating C type support for eProsima Micro XRCE-DDS[0m
+[3.524s] [ 17%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.556s] [ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.576s] [ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.269s] [ 21%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/diagnostic_msgs/srv/detail/self_test__type_support.cpp.o[0m
+[4.292s] [ 22%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/diagnostic_msgs/msg/detail/key_value__type_support.cpp.o[0m
+[4.299s] [ 24%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/diagnostic_msgs/msg/detail/diagnostic_status__type_support.cpp.o[0m
+[4.307s] [ 25%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/diagnostic_msgs/srv/detail/add_diagnostics__type_support.cpp.o[0m
+[4.310s] [ 26%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/diagnostic_msgs/msg/detail/diagnostic_array__type_support.cpp.o[0m
+[4.562s] [ 27%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/diagnostic_msgs/msg/diagnostic_array__type_support.cpp.o[0m
+[4.602s] [ 29%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/diagnostic_msgs/msg/diagnostic_status__type_support.cpp.o[0m
+[4.618s] [ 30%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/diagnostic_msgs/msg/key_value__type_support.cpp.o[0m
+[4.637s] [ 31%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/diagnostic_msgs/srv/add_diagnostics__type_support.cpp.o[0m
+[4.676s] [ 32%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/diagnostic_msgs/srv/self_test__type_support.cpp.o[0m
+[5.274s] [ 34%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/diagnostic_msgs/msg/detail/dds_fastrtps/diagnostic_array__type_support.cpp.o[0m
+[5.482s] [ 35%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/diagnostic_msgs/msg/detail/microxrcedds/diagnostic_array__type_support_cpp.cpp.o[0m
+[6.294s] [ 36%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/diagnostic_msgs/msg/detail/microxrcedds/diagnostic_status__type_support_cpp.cpp.o[0m
+[6.303s] [ 37%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/diagnostic_msgs/msg/detail/microxrcedds/key_value__type_support_cpp.cpp.o[0m
+[6.449s] [ 39%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/diagnostic_msgs/msg/detail/dds_fastrtps/diagnostic_status__type_support.cpp.o[0m
+[6.504s] [ 40%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/diagnostic_msgs/msg/detail/dds_fastrtps/key_value__type_support.cpp.o[0m
+[6.560s] [ 41%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/diagnostic_msgs/srv/detail/dds_fastrtps/add_diagnostics__type_support.cpp.o[0m
+[6.622s] [ 43%] [32m[1mLinking CXX shared library libdiagnostic_msgs__rosidl_typesupport_cpp.so[0m
+[6.658s] [ 44%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/diagnostic_msgs/srv/detail/microxrcedds/add_diagnostics__type_support_cpp.cpp.o[0m
+[6.842s] [ 45%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/diagnostic_msgs/msg/diagnostic_array__type_support.cpp.o[0m
+[6.866s] [ 45%] Built target diagnostic_msgs__rosidl_typesupport_cpp
+[6.942s] [ 46%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/diagnostic_msgs/srv/detail/microxrcedds/self_test__type_support_cpp.cpp.o[0m
+[7.019s] [ 48%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/diagnostic_msgs/msg/diagnostic_status__type_support.cpp.o[0m
+[7.025s] [ 49%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/diagnostic_msgs/msg/key_value__type_support.cpp.o[0m
+[7.089s] [ 50%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/diagnostic_msgs/srv/detail/dds_fastrtps/self_test__type_support.cpp.o[0m
+[7.203s] [ 51%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/diagnostic_msgs/msg/detail/diagnostic_array__type_support_c.cpp.o[0m
+[7.213s] [ 53%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/diagnostic_msgs/srv/add_diagnostics__type_support.cpp.o[0m
+[7.241s] [ 54%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/diagnostic_msgs/srv/self_test__type_support.cpp.o[0m
+[7.431s] [ 55%] [32m[1mLinking CXX shared library libdiagnostic_msgs__rosidl_typesupport_c.so[0m
+[7.473s] [ 56%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/diagnostic_msgs/msg/detail/key_value__type_support_c.cpp.o[0m
+[7.484s] [ 58%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/diagnostic_msgs/msg/detail/diagnostic_status__type_support_c.cpp.o[0m
+[7.565s] [ 59%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/diagnostic_msgs/msg/detail/diagnostic_array__type_support.c.o[0m
+[7.636s] [ 60%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/diagnostic_msgs/srv/detail/add_diagnostics__type_support_c.cpp.o[0m
+[7.702s] [ 60%] Built target diagnostic_msgs__rosidl_typesupport_c
+[7.811s] [ 62%] [32mBuilding CXX object CMakeFiles/diagnostic_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/diagnostic_msgs/srv/detail/self_test__type_support_c.cpp.o[0m
+[7.827s] [ 63%] [32m[1mLinking CXX shared library libdiagnostic_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[7.834s] [ 64%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/diagnostic_msgs/msg/detail/diagnostic_status__type_support.c.o[0m
+[7.848s] [ 65%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/diagnostic_msgs/msg/detail/microxrcedds/diagnostic_array__type_support_c.c.o[0m
+[7.882s] [ 67%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/diagnostic_msgs/msg/detail/key_value__type_support.c.o[0m
+[7.976s] [ 68%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/diagnostic_msgs/srv/detail/add_diagnostics__type_support.c.o[0m
+[7.994s] [ 69%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/diagnostic_msgs/msg/detail/microxrcedds/diagnostic_status__type_support_c.c.o[0m
+[8.037s] [ 70%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/diagnostic_msgs/srv/detail/self_test__type_support.c.o[0m
+[8.089s] [ 72%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/diagnostic_msgs/srv/detail/microxrcedds/add_diagnostics__type_support_c.c.o[0m
+[8.106s] [ 73%] [32m[1mLinking C shared library libdiagnostic_msgs__rosidl_typesupport_introspection_c.so[0m
+[8.212s] [ 73%] Built target diagnostic_msgs__rosidl_typesupport_introspection_cpp
+[8.266s] [ 74%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/diagnostic_msgs/srv/detail/microxrcedds/self_test__type_support_c.c.o[0m
+[8.342s] [ 74%] Built target diagnostic_msgs__rosidl_typesupport_introspection_c
+[8.488s] [ 75%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/diagnostic_msgs/msg/detail/microxrcedds/key_value__type_support_c.c.o[0m
+[8.594s] [ 77%] [32m[1mLinking CXX shared library libdiagnostic_msgs__rosidl_typesupport_microxrcedds_cpp.so[0m
+[8.625s] [ 78%] [32m[1mLinking C shared library libdiagnostic_msgs__rosidl_typesupport_microxrcedds_c.so[0m
+[8.707s] [ 78%] Built target diagnostic_msgs__rosidl_typesupport_microxrcedds_c
+[8.743s] [ 79%] [32m[1mLinking CXX shared library libdiagnostic_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[8.803s] [ 79%] Built target diagnostic_msgs__rosidl_typesupport_microxrcedds_cpp
+[8.827s] [ 81%] [32m[1mLinking CXX shared library libdiagnostic_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[8.900s] [ 81%] Built target diagnostic_msgs__rosidl_typesupport_fastrtps_c
+[8.980s] [ 81%] Built target diagnostic_msgs__rosidl_typesupport_fastrtps_cpp
+[9.010s] [ 81%] Built target diagnostic_msgs
+[9.036s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[10.463s] [ 82%] Built target diagnostic_msgs__py
+[10.493s] [ 83%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_generator_py.dir/rosidl_generator_py/diagnostic_msgs/msg/_diagnostic_array_s.c.o[0m
+[10.645s] [ 84%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_generator_py.dir/rosidl_generator_py/diagnostic_msgs/srv/_self_test_s.c.o[0m
+[10.803s] [ 86%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_generator_py.dir/rosidl_generator_py/diagnostic_msgs/srv/_add_diagnostics_s.c.o[0m
+[10.954s] [ 87%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_generator_py.dir/rosidl_generator_py/diagnostic_msgs/msg/_key_value_s.c.o[0m
+[11.100s] [ 88%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_generator_py.dir/rosidl_generator_py/diagnostic_msgs/msg/_diagnostic_status_s.c.o[0m
+[11.255s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/diagnostic_msgs/libdiagnostic_msgs__rosidl_generator_py.so[0m
+[11.299s] [ 89%] Built target diagnostic_msgs__rosidl_generator_py
+[11.328s] [ 91%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir/rosidl_generator_py/diagnostic_msgs/_diagnostic_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.o[0m
+[11.457s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.499s] [ 92%] Built target diagnostic_msgs__rosidl_typesupport_microxrcedds_c__pyext
+[11.522s] [ 93%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/diagnostic_msgs/_diagnostic_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[11.643s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.685s] [ 94%] Built target diagnostic_msgs__rosidl_typesupport_c__pyext
+[11.718s] [ 96%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/diagnostic_msgs/_diagnostic_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[11.860s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.900s] [ 97%] Built target diagnostic_msgs__rosidl_typesupport_introspection_c__pyext
+[11.922s] [ 98%] [32mBuilding C object CMakeFiles/diagnostic_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/diagnostic_msgs/_diagnostic_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[12.036s] [100%] [32m[1mLinking C shared library rosidl_generator_py/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.076s] [100%] Built target diagnostic_msgs__rosidl_typesupport_fastrtps_c__pyext
+[12.089s] Invoked command in '/home/abhay/microros_ws/build/diagnostic_msgs' returned '0': AMENT_PREFIX_PATH=/home/abhay/microros_ws/install/geometry_msgs:/home/abhay/microros_ws/install/std_msgs:/home/abhay/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abhay/microros_ws/install/geometry_msgs:/home/abhay/microros_ws/install/std_msgs:/home/abhay/microros_ws/install/builtin_interfaces:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/abhay/microros_ws/install/microcdr:/home/abhay/microros_ws/install/micro_ros_setup:/home/abhay/ros2_ws/install/py_srvcli:/home/abhay/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abhay/microros_ws/install/geometry_msgs/lib:/home/abhay/microros_ws/install/std_msgs/lib:/home/abhay/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abhay/microros_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/abhay/microros_ws/build/diagnostic_msgs -- -j16 -l16
+[12.253s] Invoking command in '/home/abhay/microros_ws/build/diagnostic_msgs': AMENT_PREFIX_PATH=/home/abhay/microros_ws/install/geometry_msgs:/home/abhay/microros_ws/install/std_msgs:/home/abhay/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abhay/microros_ws/install/geometry_msgs:/home/abhay/microros_ws/install/std_msgs:/home/abhay/microros_ws/install/builtin_interfaces:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/abhay/microros_ws/install/microcdr:/home/abhay/microros_ws/install/micro_ros_setup:/home/abhay/ros2_ws/install/py_srvcli:/home/abhay/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abhay/microros_ws/install/geometry_msgs/lib:/home/abhay/microros_ws/install/std_msgs/lib:/home/abhay/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abhay/microros_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/abhay/microros_ws/build/diagnostic_msgs
+[12.264s] -- Install configuration: ""
+[12.264s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/ament_index/resource_index/rosidl_interfaces/diagnostic_msgs
+[12.264s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs
+[12.264s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg
+[12.264s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/rosidl_generator_c__visibility_control.h
+[12.264s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail
+[12.265s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/key_value__functions.h
+[12.265s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__functions.h
+[12.265s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/key_value__struct.h
+[12.265s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__functions.h
+[12.265s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__struct.h
+[12.265s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__struct.h
+[12.265s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/key_value__functions.c
+[12.266s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/key_value__type_support.h
+[12.266s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__type_support.h
+[12.266s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__functions.c
+[12.266s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__type_support.h
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__functions.c
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/diagnostic_array.h
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/key_value.h
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/diagnostic_status.h
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/self_test__struct.h
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/add_diagnostics__functions.c
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/self_test__functions.c
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/add_diagnostics__struct.h
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/self_test__functions.h
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/self_test__type_support.h
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/add_diagnostics__functions.h
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/add_diagnostics__type_support.h
+[12.267s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/add_diagnostics.h
+[12.268s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/self_test.h
+[12.268s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/environment/library_path.sh
+[12.268s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/environment/library_path.dsv
+[12.268s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_generator_c.so
+[12.269s] -- Set runtime path of "/home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_generator_c.so" to ""
+[12.269s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs
+[12.269s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg
+[12.270s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/detail
+[12.270s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/detail/diagnostic_status__rosidl_typesupport_microxrcedds_c.h
+[12.270s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/detail/microxrcedds
+[12.270s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/detail/diagnostic_array__rosidl_typesupport_microxrcedds_c.h
+[12.270s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/detail/key_value__rosidl_typesupport_microxrcedds_c.h
+[12.271s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/rosidl_typesupport_microxrcedds_c__visibility_control.h
+[12.271s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/srv
+[12.271s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/srv/detail
+[12.271s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/srv/detail/microxrcedds
+[12.271s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/srv/detail/add_diagnostics__rosidl_typesupport_microxrcedds_c.h
+[12.271s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/srv/detail/self_test__rosidl_typesupport_microxrcedds_c.h
+[12.271s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_microxrcedds_c.so
+[12.272s] -- Set runtime path of "/home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_microxrcedds_c.so" to ""
+[12.272s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs
+[12.272s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg
+[12.273s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail
+[12.273s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__rosidl_typesupport_fastrtps_c.h
+[12.273s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/key_value__rosidl_typesupport_fastrtps_c.h
+[12.273s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__rosidl_typesupport_fastrtps_c.h
+[12.273s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.273s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv
+[12.273s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail
+[12.273s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/add_diagnostics__rosidl_typesupport_fastrtps_c.h
+[12.274s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/self_test__rosidl_typesupport_fastrtps_c.h
+[12.274s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_fastrtps_c.so
+[12.274s] -- Set runtime path of "/home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[12.274s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs
+[12.274s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg
+[12.275s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail
+[12.275s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/key_value__type_support.c
+[12.275s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__type_support.c
+[12.276s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/key_value__rosidl_typesupport_introspection_c.h
+[12.276s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__rosidl_typesupport_introspection_c.h
+[12.276s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__rosidl_typesupport_introspection_c.h
+[12.276s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__type_support.c
+[12.276s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.276s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv
+[12.276s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail
+[12.277s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/add_diagnostics__rosidl_typesupport_introspection_c.h
+[12.277s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/self_test__rosidl_typesupport_introspection_c.h
+[12.277s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/self_test__type_support.c
+[12.277s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/add_diagnostics__type_support.c
+[12.277s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_introspection_c.so
+[12.277s] -- Set runtime path of "/home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_introspection_c.so" to ""
+[12.277s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_c.so
+[12.278s] -- Set runtime path of "/home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_c.so" to ""
+[12.278s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs
+[12.278s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg
+[12.278s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/key_value.hpp
+[12.278s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/diagnostic_status.hpp
+[12.279s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail
+[12.279s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__struct.hpp
+[12.279s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/key_value__struct.hpp
+[12.279s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/key_value__traits.hpp
+[12.280s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__traits.hpp
+[12.280s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__builder.hpp
+[12.280s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__struct.hpp
+[12.280s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__traits.hpp
+[12.281s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__builder.hpp
+[12.281s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/key_value__builder.hpp
+[12.281s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/diagnostic_array.hpp
+[12.281s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv
+[12.281s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail
+[12.281s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/add_diagnostics__struct.hpp
+[12.282s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/self_test__struct.hpp
+[12.282s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/add_diagnostics__builder.hpp
+[12.282s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/self_test__builder.hpp
+[12.283s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/self_test__traits.hpp
+[12.283s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/add_diagnostics__traits.hpp
+[12.283s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/add_diagnostics.hpp
+[12.283s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/self_test.hpp
+[12.283s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs
+[12.283s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg
+[12.283s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/detail
+[12.284s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/detail/diagnostic_array__rosidl_typesupport_microxrcedds_cpp.hpp
+[12.284s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/detail/microxrcedds
+[12.284s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/detail/microxrcedds/key_value__type_support_cpp.cpp
+[12.285s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/detail/microxrcedds/diagnostic_status__type_support_cpp.cpp
+[12.286s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/detail/microxrcedds/diagnostic_array__type_support_cpp.cpp
+[12.287s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/detail/diagnostic_status__rosidl_typesupport_microxrcedds_cpp.hpp
+[12.287s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/detail/key_value__rosidl_typesupport_microxrcedds_cpp.hpp
+[12.287s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/msg/rosidl_typesupport_microxrcedds_cpp__visibility_control.h
+[12.287s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/srv
+[12.288s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/srv/detail
+[12.288s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/srv/detail/add_diagnostics__rosidl_typesupport_microxrcedds_cpp.hpp
+[12.288s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/srv/detail/self_test__rosidl_typesupport_microxrcedds_cpp.hpp
+[12.288s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/srv/detail/microxrcedds
+[12.289s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/srv/detail/microxrcedds/self_test__type_support_cpp.cpp
+[12.289s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/srv/detail/microxrcedds/add_diagnostics__type_support_cpp.cpp
+[12.289s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_microxrcedds_cpp.so
+[12.290s] -- Set runtime path of "/home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_microxrcedds_cpp.so" to ""
+[12.290s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs
+[12.290s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg
+[12.290s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail
+[12.290s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__rosidl_typesupport_fastrtps_cpp.hpp
+[12.291s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/key_value__rosidl_typesupport_fastrtps_cpp.hpp
+[12.291s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/dds_fastrtps
+[12.291s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__rosidl_typesupport_fastrtps_cpp.hpp
+[12.291s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.292s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv
+[12.293s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail
+[12.293s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/add_diagnostics__rosidl_typesupport_fastrtps_cpp.hpp
+[12.294s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/self_test__rosidl_typesupport_fastrtps_cpp.hpp
+[12.294s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/dds_fastrtps
+[12.294s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_fastrtps_cpp.so
+[12.294s] -- Set runtime path of "/home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[12.294s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs
+[12.294s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg
+[12.295s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail
+[12.295s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__type_support.cpp
+[12.295s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/key_value__rosidl_typesupport_introspection_cpp.hpp
+[12.295s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/key_value__type_support.cpp
+[12.295s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__rosidl_typesupport_introspection_cpp.hpp
+[12.295s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__rosidl_typesupport_introspection_cpp.hpp
+[12.296s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__type_support.cpp
+[12.296s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv
+[12.296s] -- Up-to-date: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail
+[12.297s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/self_test__rosidl_typesupport_introspection_cpp.hpp
+[12.297s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/add_diagnostics__rosidl_typesupport_introspection_cpp.hpp
+[12.297s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/self_test__type_support.cpp
+[12.297s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/include/diagnostic_msgs/diagnostic_msgs/srv/detail/add_diagnostics__type_support.cpp
+[12.297s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_introspection_cpp.so
+[12.297s] -- Set runtime path of "/home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[12.298s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_cpp.so
+[12.298s] -- Set runtime path of "/home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_typesupport_cpp.so" to ""
+[12.298s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/environment/pythonpath.sh
+[12.298s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/environment/pythonpath.dsv
+[12.298s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs-4.2.3-py3.10.egg-info
+[12.298s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs-4.2.3-py3.10.egg-info/top_level.txt
+[12.299s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs-4.2.3-py3.10.egg-info/SOURCES.txt
+[12.299s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs-4.2.3-py3.10.egg-info/dependency_links.txt
+[12.299s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs-4.2.3-py3.10.egg-info/PKG-INFO
+[12.299s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs
+[12.299s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.299s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.299s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/msg
+[12.299s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/msg/_diagnostic_array.py
+[12.299s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/msg/_key_value_s.c
+[12.299s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/msg/_diagnostic_array_s.c
+[12.300s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/msg/__init__.py
+[12.300s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/msg/_diagnostic_status_s.c
+[12.300s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/msg/_diagnostic_status.py
+[12.300s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/msg/_key_value.py
+[12.300s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/libdiagnostic_msgs__rosidl_generator_py.so
+[12.300s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/_diagnostic_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[12.300s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/_diagnostic_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c
+[12.300s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.300s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[12.300s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/_diagnostic_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[12.300s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/_diagnostic_msgs_s.ep.rosidl_typesupport_c.c
+[12.301s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/__init__.py
+[12.301s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/srv
+[12.301s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/srv/_self_test.py
+[12.301s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/srv/_add_diagnostics_s.c
+[12.301s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/srv/_self_test_s.c
+[12.301s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/srv/__init__.py
+[12.301s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/srv/_add_diagnostics.py
+[12.338s] Listing '/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs'...
+[12.338s] Compiling '/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/__init__.py'...
+[12.338s] Listing '/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/msg'...
+[12.339s] Compiling '/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/msg/__init__.py'...
+[12.339s] Compiling '/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/msg/_diagnostic_array.py'...
+[12.339s] Compiling '/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/msg/_diagnostic_status.py'...
+[12.339s] Compiling '/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/msg/_key_value.py'...
+[12.339s] Listing '/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/srv'...
+[12.339s] Compiling '/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/srv/__init__.py'...
+[12.340s] Compiling '/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/srv/_add_diagnostics.py'...
+[12.340s] Compiling '/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/srv/_self_test.py'...
+[12.344s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[12.344s] -- Set runtime path of "/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.344s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.345s] -- Set runtime path of "/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.345s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.345s] -- Set runtime path of "/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.345s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.346s] -- Set runtime path of "/home/abhay/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages/diagnostic_msgs/diagnostic_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.346s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_generator_py.so
+[12.347s] -- Set runtime path of "/home/abhay/microros_ws/install/diagnostic_msgs/lib/libdiagnostic_msgs__rosidl_generator_py.so" to ""
+[12.347s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/msg/DiagnosticArray.idl
+[12.347s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/msg/DiagnosticStatus.idl
+[12.347s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/msg/KeyValue.idl
+[12.347s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/srv/AddDiagnostics.idl
+[12.348s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/srv/SelfTest.idl
+[12.348s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/msg/DiagnosticArray.msg
+[12.348s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/msg/DiagnosticStatus.msg
+[12.348s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/msg/KeyValue.msg
+[12.348s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/srv/AddDiagnostics.srv
+[12.348s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/srv/AddDiagnostics_Request.msg
+[12.349s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/srv/AddDiagnostics_Response.msg
+[12.349s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/srv/SelfTest.srv
+[12.349s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/srv/SelfTest_Request.msg
+[12.349s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/srv/SelfTest_Response.msg
+[12.349s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/ament_index/resource_index/package_run_dependencies/diagnostic_msgs
+[12.349s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/ament_index/resource_index/parent_prefix_path/diagnostic_msgs
+[12.349s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/environment/ament_prefix_path.sh
+[12.350s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/environment/ament_prefix_path.dsv
+[12.350s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/environment/path.sh
+[12.350s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/environment/path.dsv
+[12.350s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/local_setup.bash
+[12.350s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/local_setup.sh
+[12.351s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/local_setup.zsh
+[12.351s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/local_setup.dsv
+[12.351s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/package.dsv
+[12.351s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/ament_index/resource_index/packages/diagnostic_msgs
+[12.351s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/export_diagnostic_msgs__rosidl_generator_cExport.cmake
+[12.351s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/export_diagnostic_msgs__rosidl_generator_cExport-noconfig.cmake
+[12.351s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/export_diagnostic_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[12.352s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/export_diagnostic_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[12.352s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/diagnostic_msgs__rosidl_typesupport_introspection_cExport.cmake
+[12.352s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/diagnostic_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[12.352s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/diagnostic_msgs__rosidl_typesupport_cExport.cmake
+[12.352s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/diagnostic_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[12.353s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/export_diagnostic_msgs__rosidl_generator_cppExport.cmake
+[12.353s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/export_diagnostic_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[12.353s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/export_diagnostic_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[12.353s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/diagnostic_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[12.353s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/diagnostic_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[12.354s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/diagnostic_msgs__rosidl_typesupport_cppExport.cmake
+[12.354s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/diagnostic_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[12.354s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/export_diagnostic_msgs__rosidl_generator_pyExport.cmake
+[12.354s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/export_diagnostic_msgs__rosidl_generator_pyExport-noconfig.cmake
+[12.354s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/rosidl_cmake-extras.cmake
+[12.354s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.355s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.355s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[12.355s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[12.355s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[12.355s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[12.355s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/diagnostic_msgsConfig.cmake
+[12.355s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/cmake/diagnostic_msgsConfig-version.cmake
+[12.355s] -- Installing: /home/abhay/microros_ws/install/diagnostic_msgs/share/diagnostic_msgs/package.xml
+[12.359s] Invoked command in '/home/abhay/microros_ws/build/diagnostic_msgs' returned '0': AMENT_PREFIX_PATH=/home/abhay/microros_ws/install/geometry_msgs:/home/abhay/microros_ws/install/std_msgs:/home/abhay/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abhay/microros_ws/install/geometry_msgs:/home/abhay/microros_ws/install/std_msgs:/home/abhay/microros_ws/install/builtin_interfaces:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/abhay/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/abhay/microros_ws/install/microcdr:/home/abhay/microros_ws/install/micro_ros_setup:/home/abhay/ros2_ws/install/py_srvcli:/home/abhay/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abhay/microros_ws/install/geometry_msgs/lib:/home/abhay/microros_ws/install/std_msgs/lib:/home/abhay/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abhay/microros_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/abhay/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/abhay/microros_ws/build/diagnostic_msgs
