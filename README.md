@@ -11,7 +11,6 @@ Hello guys, this repo consists of everything that I prepared and contributed to 
   - [Tasks Left](#tasks-left)
 - [Version](#version)
   - [Components](#components)
-- [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
