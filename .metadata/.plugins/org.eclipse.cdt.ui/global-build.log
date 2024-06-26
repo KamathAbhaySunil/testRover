@@ -1,4 +1,4 @@
-23:42:17 **** Incremental Build of configuration Debug for project uros ****
+02:54:08 **** Incremental Build of configuration Debug for project uros ****
 make -j16 all 
 docker pull microros/micro_ros_static_library_builder:humble && docker run --rm -v /home/abhay/STM32CubeIDE/microROS_ws/uros:/project --env MICROROS_LIBRARY_FOLDER=micro_ros_stm32cubemx_utils/microros_static_library_ide microros/micro_ros_static_library_builder:humble
 humble: Pulling from microros/micro_ros_static_library_builder
@@ -10,30 +10,70 @@ micro-ROS library found. Skipping...
 Delete micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/ for rebuild.
  
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "uros.elf" @"objects.list"  -lmicroros -mcpu=cortex-m4 -T"/home/abhay/STM32CubeIDE/microROS_ws/uros/STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="uros.map" -Wl,--gc-sections -static -L../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: uros.elf
- 
-arm-none-eabi-size  uros.elf 
-arm-none-eabi-objdump -h -S uros.elf  > "uros.list"
-   text	   data	    bss	    dec	    hex	filename
-  73108	    272	  57608	 130988	  1ffac	uros.elf
-Finished building: default.size.stdout
- 
-Finished building: uros.list
- 
-23:43:53 **** Incremental Build of configuration Debug for project uros ****
-make -j16 all 
-docker pull microros/micro_ros_static_library_builder:humble && docker run --rm -v /home/abhay/STM32CubeIDE/microROS_ws/uros:/project --env MICROROS_LIBRARY_FOLDER=micro_ros_stm32cubemx_utils/microros_static_library_ide microros/micro_ros_static_library_builder:humble
-humble: Pulling from microros/micro_ros_static_library_builder
-Digest: sha256:d73ee0cb5d320c42fab269f638e706b67123fe2e50fc13a25af02f739893ca4b
-Status: Image is up to date for microros/micro_ros_static_library_builder:humble
-docker.io/microros/micro_ros_static_library_builder:humble
-dos2unix: converting file /project/micro_ros_stm32cubemx_utils/microros_static_library_ide/library_generation/library_generation.sh to Unix format...
-micro-ROS library found. Skipping...
-Delete micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/ for rebuild.
- 
-arm-none-eabi-size  uros.elf 
-   text	   data	    bss	    dec	    hex	filename
-  73108	    272	  57608	 130988	  1ffac	uros.elf
-Finished building: default.size.stdout
- 
+../Core/Src/main.c: In function 'cmd_vel_callback':
+../Core/Src/main.c:150:5: warning: 'main' is normally a non-static function [-Wmain]
+  150 | int main(void)
+      |     ^~~~
+../Core/Src/main.c:283:13: error: invalid storage class for function 'MX_TIM3_Init'
+  283 | static void MX_TIM3_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:344:13: error: invalid storage class for function 'MX_USART2_UART_Init'
+  344 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:375:13: error: invalid storage class for function 'MX_DMA_Init'
+  375 | static void MX_DMA_Init(void)
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:396:13: error: invalid storage class for function 'MX_GPIO_Init'
+  396 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:470:32: warning: unused variable 'msg' [-Wunused-variable]
+  470 |           std_msgs__msg__Int32 msg;
+      |                                ^~~
+../Core/Src/main.c:469:27: warning: unused variable 'publisher' [-Wunused-variable]
+  469 |           rcl_publisher_t publisher;
+      |                           ^~~~~~~~~
+../Core/Src/main.c: In function 'cmd_vel_callback':
+../Core/Src/main.c:537:1: error: expected declaration or statement at end of input
+  537 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:83:13: warning: 'MX_GPIO_Init' used but never defined
+   83 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:84:13: warning: 'MX_DMA_Init' used but never defined
+   84 | static void MX_DMA_Init(void);
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:85:13: warning: 'MX_USART2_UART_Init' used but never defined
+   85 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:86:13: warning: 'MX_TIM3_Init' used but never defined
+   86 | static void MX_TIM3_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:528:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  528 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:441:6: warning: 'StartDefaultTask' defined but not used [-Wunused-function]
+  441 | void StartDefaultTask(void *argument)
+      |      ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:396:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  396 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:375:13: warning: 'MX_DMA_Init' defined but not used [-Wunused-function]
+  375 | static void MX_DMA_Init(void)
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:344:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  344 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:283:13: warning: 'MX_TIM3_Init' defined but not used [-Wunused-function]
+  283 | static void MX_TIM3_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:236:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  236 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:150:5: warning: 'main' defined but not used [-Wunused-function]
+  150 | int main(void)
+      |     ^~~~
+make[1]: *** [Core/Src/subdir.mk:46: Core/Src/main.o] Error 1
+make: *** [makefile:63: all] Error 2
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
