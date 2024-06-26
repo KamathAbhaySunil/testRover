@@ -26,9 +26,11 @@ Astra Robotics, the interdisciplinary student technical team at RV College of En
 ### Tasks Left
 - Interfacing wheel ecoders using interrupts
 - Interfacing IMU
+- getting odometry working
 - writing the code for PID control of Linear and Angular Velocity
 - writing the code for EKF
 - Simultaneous Localization and Mapping using liDAR
+- interfacing kinnect sensor or another stereo camera for 3D depth mapping
 
 ## Version
 ### Current Version: 1.0.0
