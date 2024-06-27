@@ -22,7 +22,7 @@ Astra Robotics, the interdisciplinary student technical team at RV College of En
 - Differential drive to control the rover
 
 ### Tasks Under Progress
-- Interfacing wheel ecoders using interrupts
+- Interfacing wheel encoders using interrupts
 
 ### Tasks Left
 - Interfacing IMU
