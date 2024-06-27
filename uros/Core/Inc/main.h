@@ -59,10 +59,22 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define LPWM1_Pin GPIO_PIN_6
+#define LPWM1_GPIO_Port GPIOA
+#define LPWM2_Pin GPIO_PIN_7
+#define LPWM2_GPIO_Port GPIOA
+#define RPWM1_Pin GPIO_PIN_0
+#define RPWM1_GPIO_Port GPIOB
+#define RPWM2_Pin GPIO_PIN_1
+#define RPWM2_GPIO_Port GPIOB
 #define green_Pin GPIO_PIN_12
 #define green_GPIO_Port GPIOD
+#define orange_Pin GPIO_PIN_13
+#define orange_GPIO_Port GPIOD
 #define red_Pin GPIO_PIN_14
 #define red_GPIO_Port GPIOD
+#define blue_Pin GPIO_PIN_15
+#define blue_GPIO_Port GPIOD
 
 /* USER CODE BEGIN Private defines */
 
