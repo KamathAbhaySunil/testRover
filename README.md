@@ -35,6 +35,7 @@ Astra Robotics, the interdisciplinary student technical team at RV College of En
 ## Version
 ### Current Version: 1.0.0
 - microROS sending and recieving data
+- can control left right forward and backward using cmd_vel and teleoptwist keyboard
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
