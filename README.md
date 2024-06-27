@@ -19,12 +19,12 @@ Astra Robotics, the interdisciplinary student technical team at RV College of En
 
 ### Completed Tasks
 - setup microROS for ROS communication between STM32 and ROS2 Humble
+- Differential drive to control the rover
 
 ### Tasks Under Progress
-- Differential Drive (Code written has to be tested and tuned)
+- Interfacing wheel ecoders using interrupts
 
 ### Tasks Left
-- Interfacing wheel ecoders using interrupts
 - Interfacing IMU
 - getting odometry working
 - writing the code for PID control of Linear and Angular Velocity
