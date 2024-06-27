@@ -21,7 +21,7 @@ Astra Robotics, the interdisciplinary student technical team at RV College of En
 - setup microROS for ROS communication between STM32 and ROS2 Humble
 
 ### Tasks Under Progress
-- Differential Drive
+- Differential Drive (Code written has to be tested and tuned)
 
 ### Tasks Left
 - Interfacing wheel ecoders using interrupts
