@@ -152,7 +152,17 @@ void cmd_vel_callback(const void*msgin)											//defining the cmd_vel callbac
 	}
 
 }
-
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if (GPIO_Pin == LCA_Pin){
+		if (HAL_GPIO_ReadPin(LCB_GPIO_Port, LCB_Pin) == 1) leftWheelEncoder++;
+		else if (HAL_GPIO_ReadPin(LCB_GPIO_Port, LCB_Pin) == 0) leftWheelEncoder--;
+	}
+	else if (GPIO_Pin == RCA_Pin){
+		if (HAL_GPIO_ReadPin(RCB_GPIO_Port, RCB_Pin) == 1) rightWheelEncoder++;
+		else if (HAL_GPIO_ReadPin(RCB_GPIO_Port, RCB_Pin) == 0) rightWheelEncoder--;
+	}
+}
 
 /* USER CODE END 0 */
 
